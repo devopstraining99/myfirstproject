@@ -11,7 +11,7 @@
           BackupBucket:
             Type: 'AWS::S3::Bucket'
             Properties:
-              BucketName: backup-bucket
+              BucketName: new-backup-bucket
               OwnershipControls:
                 Rules:
                 - ObjectOwnership: BucketOwnerPreferred
