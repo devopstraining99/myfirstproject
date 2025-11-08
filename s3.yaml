@@ -8,3 +8,11 @@
                 Rules:
                 - ObjectOwnership: BucketOwnerPreferred
               AccessControl: AwsExecRead  
+          BackupBucket:
+            Type: 'AWS::S3::Bucket'
+            Properties:
+              BucketName: backup-bucket
+              OwnershipControls:
+                Rules:
+                - ObjectOwnership: BucketOwnerPreferred
+              AccessControl: AwsExecRead
